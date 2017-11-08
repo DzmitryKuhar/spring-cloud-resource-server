@@ -1,0 +1,18 @@
+server:
+  context-path: /resource
+  port: 5002
+
+security:
+  oauth2:
+    resource:
+      token-info-uri: http://localhost:5001/uaa/oauth/check_token
+      user-info-uri: http://localhost:5001/uaa/user
+    client:
+      client-id: client
+      client-secret: secret
+
+logging:
+  level:
+    org.springframework.web.client: TRACE
+    org.springframework.http.client: TRACE
+    org.springframework.security: DEBUG

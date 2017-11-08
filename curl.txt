@@ -1,0 +1,5 @@
+Resource Server
+
+1)User and login test requests
+curl -H "Authorization: Bearer e203c491-58d7-4766-9bc3-f4bc3e9a7421" -X GET http://localhost:5002/resource/user
+curl -H "Authorization: Bearer e203c491-58d7-4766-9bc3-f4bc3e9a7421" -X GET http://localhost:5002/resource/login
